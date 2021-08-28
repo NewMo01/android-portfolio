@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Cricket</string>
+    <string name="calculate">calculate</string>
+    <string name="enter_degree">Enter the degree in chips</string>
+    <string name="Enter">Enter the degree in chips to covert it to celcius degree.</string>
+    <string name="the_temp">The temperature after converting is  </string>
+    <string name="degree"> degree celcius.</string>
+</resources>

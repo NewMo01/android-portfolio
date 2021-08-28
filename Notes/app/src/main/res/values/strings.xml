@@ -1,0 +1,24 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="app_name">Notes</string>
+    <string name="title_activity_main">Notes</string>
+    <string name="sign_in">Sign in with google</string>
+    <string name="menu_item1">Main</string>
+    <string name="menu_item2">Check</string>
+    <string name="remove_ads">Remove Ads</string>
+    <string name="feedback">Feedback</string>
+    <string name="open">open</string>
+    <string name="close">close</string>
+    <string name="Cancelation" tools:ignore="ButtonCase">cancel</string>
+    <string name="Accept">ok</string>
+    <string name="tasks">Add the small tasks to achieve the goal</string>
+    <string name="limit_time">Deadline to finish the goal</string>
+    <string name="title_activity_goal_progress">TargetProgress</string>
+    <string name="channel_name">MyChannel</string>
+    <string name="channel_description">this is my channel</string>
+    <string name="notification_id">done_notifi</string>
+    <string name="title_activity_searchable">Searchable</string>
+    <string name="create">Create a goal</string>
+
+
+
+</resources>

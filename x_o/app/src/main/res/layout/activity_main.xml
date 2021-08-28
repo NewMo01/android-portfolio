@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#3F51B5"
+        android:textSize="17sp"
+        android:text="Player 1 : O      Player2 : X"
+        android:textStyle="bold"
+        android:gravity="center_horizontal"/>
+
+    <GridLayout
+        android:id="@+id/grid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:rowCount="3"
+        android:columnCount="3"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:background="#3F51B5">
+
+        <Button
+            android:id="@+id/b_0"
+            android:padding="35dp"
+            android:textColor="#FF5722"
+            android:textSize="17sp"
+            android:layout_margin="3dp"/>
+        <Button  android:id="@+id/b_1"
+            android:padding="35dp"
+            android:textColor="#FF5722"
+            android:textSize="17sp"
+            android:layout_margin="3dp"/>
+        <Button
+            android:id="@+id/b_2"
+            android:padding="35dp"
+            android:textColor="#FF5722"
+            android:textSize="17sp"
+            android:layout_margin="3dp"/>
+
+        <Button  android:id="@+id/b_3"
+            android:padding="35dp"
+            android:textColor="#FF5722"
+            android:textSize="17sp"
+            android:layout_margin="3dp"/>
+        <Button  android:id="@+id/b_4"
+            android:padding="35dp"
+            android:textColor="#FF5722"
+            android:textSize="17sp"
+            android:layout_margin="3dp"/>
+        <Button android:id="@+id/b_5"
+            android:padding="35dp"
+            android:textColor="#FF5722"
+            android:textSize="17sp"
+            android:layout_margin="3dp"/>
+
+        <Button  android:id="@+id/b_6"
+            android:padding="35dp"
+            android:textColor="#FF5722"
+            android:textSize="17sp"
+            android:layout_margin="3dp"/>
+        <Button android:id="@+id/b_7"
+            android:padding="35dp"
+            android:textColor="#FF5722"
+            android:textSize="17sp"
+            android:layout_margin="3dp"/>
+        <Button  android:id="@+id/b_8"
+            android:padding="35dp"
+            android:textColor="#FF5722"
+            android:textSize="17sp"
+            android:layout_margin="3dp"/>
+
+    </GridLayout>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="resetOnClick"
+        android:layout_margin="20dp"
+        android:text="reset"
+        android:textSize="20sp"
+        android:background="#BC7610"/>
+
+</LinearLayout>
