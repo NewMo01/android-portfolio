@@ -16,6 +16,7 @@ import java.util.List;
 public class MainActivity extends AppCompatActivity {
 
 
+
     RecyclerView recyclerView;
     MyAdapter adapter = new MyAdapter();
     RecyclerView.LayoutManager layoutManager = new LinearLayoutManager(this);
@@ -26,11 +27,13 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         MViewModel viewModel = ViewModelProviders.of(this).get(MViewModel.class);
-
         recyclerView = findViewById(R.id.recyclerView);
+
 
         recyclerView.setLayoutManager(layoutManager);
         recyclerView.setAdapter(adapter);
+
+
 
         viewModel.getPosts();
 
