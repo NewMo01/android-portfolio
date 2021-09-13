@@ -11,14 +11,15 @@ import androidx.recyclerview.widget.RecyclerView;
 import com.example.retrofit_mvvm.R;
 import com.example.retrofit_mvvm.pojo.PostsModel;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class MainActivity extends AppCompatActivity {
 
 
-
+    List<PostsModel> list = new ArrayList<>();
     RecyclerView recyclerView;
-    MyAdapter adapter = new MyAdapter();
+    MyAdapter adapter = new MyAdapter(list);
     RecyclerView.LayoutManager layoutManager = new LinearLayoutManager(this);
 
     @Override
@@ -29,9 +30,9 @@ public class MainActivity extends AppCompatActivity {
         MViewModel viewModel = ViewModelProviders.of(this).get(MViewModel.class);
         recyclerView = findViewById(R.id.recyclerView);
 
-
         recyclerView.setLayoutManager(layoutManager);
         recyclerView.setAdapter(adapter);
+
 
 
 
@@ -40,7 +41,8 @@ public class MainActivity extends AppCompatActivity {
         viewModel.mutableLiveData.observe(this, new Observer<List<PostsModel>>() {
             @Override
             public void onChanged(List<PostsModel> postsModels) {
-                adapter.setList(postsModels);
+                list.addAll(postsModels);
+                adapter.notifyDataSetChanged();
             }
         });
 

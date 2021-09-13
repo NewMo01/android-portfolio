@@ -16,13 +16,16 @@ import java.util.List;
 
 public class MyAdapter extends RecyclerView.Adapter<MyAdapter.MyViewHolder> {
 
-    List<PostsModel> list = new ArrayList<>();
+    List<PostsModel> list ;
 
-    public void setList(List<PostsModel> l){
+//    public void setList(List<PostsModel> l){
+//        list = l ;
+//        notifyDataSetChanged();
+//    }
+
+    public MyAdapter(List<PostsModel> l){
         list = l ;
-        notifyDataSetChanged();
     }
-
 
     @NonNull
     @Override
