@@ -44,12 +44,7 @@ public class MainActivity extends AppCompatActivity {
                 });
             }
         }).doOnNext(x->Log.e("A","Up Stream: "+x))
-            .map(new Function<Object, Object>() {
-                @Override
-                public Object apply(Object o) throws Throwable {
-                    return Integer.parseInt(o.toString())+2;
-                }
-            })
+            .filter(c-> c.toString().equals("Mo") || c.toString().equals("ass"))
             .subscribe(y->Log.e("A" , "Down Stream: "+y));
     }
 
